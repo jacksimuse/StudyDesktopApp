@@ -1,10 +1,11 @@
-﻿using System;
+﻿using LoginAPp;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LoginAPp
+namespace LoginApp
 {
     static class Program
     {
