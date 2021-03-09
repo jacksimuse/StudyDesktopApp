@@ -18,12 +18,24 @@ namespace FlagWinApp
         {
             InitializeComponent();
 
-            isHello = true; // 아침임. 초기화
+            // isHello = true; // 아침임. 초기화
         }
 
         private void BtnGreeting_Click(object sender, EventArgs e)
         {
-            if (isHello == true)
+            isHello ^= true;
+            if(isHello)
+            {
+                LblGreeting.Text = "Good Morning";
+                BtnGreeting.Text = "저녁인사";
+            }
+            else
+            {
+                LblGreeting.Text = "Good Bye~~~~!";
+                BtnGreeting.Text = "아침인사";
+            }
+            
+            /*if (isHello == true)
             {
                 LblGreeting.Text = "Good Morning";
                 isHello = false;
@@ -34,7 +46,7 @@ namespace FlagWinApp
                 LblGreeting.Text = "Good Bye~~~~!";
                 isHello = true;
                 BtnGreeting.Text = "아침인사";
-            }
+            }*/
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
