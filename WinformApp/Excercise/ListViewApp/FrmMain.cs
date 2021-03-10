@@ -25,52 +25,62 @@ namespace ListViewApp
             itemSwitch.SubItems.Add("6,000,000");
 
             ListViewItem itemDs = new ListViewItem("Nintendo DS", 1);
-            itemSwitch.SubItems.Add("300,000");
-            itemSwitch.SubItems.Add("50");
-            itemSwitch.SubItems.Add("1,500,000");
+            itemDs.SubItems.Add("300,000");
+            itemDs.SubItems.Add("50");
+            itemDs.SubItems.Add("1,500,000");
 
             ListViewItem itemPs = new ListViewItem("PlayStation 4", 2);
-            itemSwitch.SubItems.Add("400,000");
-            itemSwitch.SubItems.Add("10");
-            itemSwitch.SubItems.Add("4,000,000");
+            itemPs.SubItems.Add("400,000");
+            itemPs.SubItems.Add("10");
+            itemPs.SubItems.Add("4,000,000");
 
             ListViewItem itemWii = new ListViewItem("Nintendo Wii", 3);
-            itemSwitch.SubItems.Add("200,000");
-            itemSwitch.SubItems.Add("30");
-            itemSwitch.SubItems.Add("6,000,000");
+            itemWii.SubItems.Add("200,000");
+            itemWii.SubItems.Add("30");
+            itemWii.SubItems.Add("6,000,000");
 
             ListViewItem itemXbox = new ListViewItem("XBox 360", 4);
-            itemSwitch.SubItems.Add("700,000");
-            itemSwitch.SubItems.Add("10");
-            itemSwitch.SubItems.Add("");
+            itemXbox.SubItems.Add("700,000");
+            itemXbox.SubItems.Add("10");
+            itemXbox.SubItems.Add("14,000,000");
 
-            LsbProduct.Items.AddRange(new ListViewItem[] { itemSwitch, itemDs, itemPs, itemWii, itemXbox });
+            LsvProducts.Items.AddRange(new ListViewItem[] { itemSwitch, itemDs, itemPs, itemWii, itemXbox });
 
         }
 
         private void RdbDetails_CheckedChanged(object sender, EventArgs e)
         {
-            if (RdbDetails.Checked) LsbProduct.View = View.Details;
+            if (RdbDetails.Checked) LsvProducts.View = View.Details;
         }
 
         private void RdbList_CheckedChanged(object sender, EventArgs e)
         {
-            if (RdbList.Checked) LsbProduct.View = View.List;
+            if (RdbList.Checked) LsvProducts.View = View.List;
         }
 
         private void RdbSmallIcon_CheckedChanged(object sender, EventArgs e)
         {
-            if (RdbSmallIcon.Checked) LsbProduct.View = View.SmallIcon;
+            if (RdbSmallIcon.Checked) LsvProducts.View = View.SmallIcon;
         }
 
         private void RdbLargeIcon_CheckedChanged(object sender, EventArgs e)
         {
-            if (RdbLargeIcon.Checked) LsbProduct.View = View.LargeIcon;
+            if (RdbLargeIcon.Checked) LsvProducts.View = View.LargeIcon;
         }
 
-        private void LsbProduct_SelectedIndexChanged(object sender, EventArgs e)
+        private void LsvProducts_SelectedIndexChanged(object sender, EventArgs e)
         {
+            TxtSelected.Text = string.Empty;
 
+            var selected = LsvProducts.SelectedItems;
+
+            foreach (ListViewItem item in selected)
+            {
+                for (int i = 0; i < 4; i++)
+                {
+                    TxtSelected.Text += item.SubItems[i].Text + " ";
+                }
+            }
         }
     }
 }
