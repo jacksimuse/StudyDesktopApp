@@ -29,6 +29,7 @@ namespace MaskedTextApp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,7 +48,7 @@ namespace MaskedTextApp
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 33);
+            this.label1.Location = new System.Drawing.Point(38, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 12);
             this.label1.TabIndex = 0;
@@ -56,7 +57,7 @@ namespace MaskedTextApp
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 77);
+            this.label2.Location = new System.Drawing.Point(26, 52);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 12);
             this.label2.TabIndex = 1;
@@ -65,7 +66,7 @@ namespace MaskedTextApp
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(56, 121);
+            this.label3.Location = new System.Drawing.Point(50, 82);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(29, 12);
             this.label3.TabIndex = 2;
@@ -74,87 +75,86 @@ namespace MaskedTextApp
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 165);
+            this.label4.Location = new System.Drawing.Point(14, 112);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 12);
-            this.label4.TabIndex = 3;
+            this.label4.TabIndex = 4;
             this.label4.Text = "휴대폰번호";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(32, 209);
+            this.label5.Location = new System.Drawing.Point(26, 142);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 12);
-            this.label5.TabIndex = 4;
+            this.label5.TabIndex = 5;
             this.label5.Text = "주민번호";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(44, 253);
+            this.label6.Location = new System.Drawing.Point(38, 172);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 12);
-            this.label6.TabIndex = 5;
+            this.label6.TabIndex = 6;
             this.label6.Text = "이메일";
             // 
             // TxtHiredDate
             // 
-            this.TxtHiredDate.Location = new System.Drawing.Point(120, 24);
+            this.TxtHiredDate.Location = new System.Drawing.Point(96, 19);
             this.TxtHiredDate.Mask = "0000-00-00";
             this.TxtHiredDate.Name = "TxtHiredDate";
-            this.TxtHiredDate.Size = new System.Drawing.Size(81, 21);
-            this.TxtHiredDate.TabIndex = 6;
+            this.TxtHiredDate.Size = new System.Drawing.Size(74, 21);
+            this.TxtHiredDate.TabIndex = 7;
             this.TxtHiredDate.ValidatingType = typeof(System.DateTime);
             // 
             // TxtZipcode
             // 
-            this.TxtZipcode.Location = new System.Drawing.Point(120, 68);
-            this.TxtZipcode.Mask = "99999";
+            this.TxtZipcode.Location = new System.Drawing.Point(96, 49);
+            this.TxtZipcode.Mask = "00000";
             this.TxtZipcode.Name = "TxtZipcode";
             this.TxtZipcode.Size = new System.Drawing.Size(43, 21);
-            this.TxtZipcode.TabIndex = 7;
-            this.TxtZipcode.ValidatingType = typeof(int);
+            this.TxtZipcode.TabIndex = 8;
             // 
             // TxtAddress
             // 
-            this.TxtAddress.Location = new System.Drawing.Point(120, 112);
+            this.TxtAddress.Location = new System.Drawing.Point(96, 79);
             this.TxtAddress.Name = "TxtAddress";
-            this.TxtAddress.Size = new System.Drawing.Size(492, 21);
-            this.TxtAddress.TabIndex = 8;
+            this.TxtAddress.Size = new System.Drawing.Size(430, 21);
+            this.TxtAddress.TabIndex = 9;
             // 
             // TxtMobile
             // 
-            this.TxtMobile.Location = new System.Drawing.Point(120, 156);
+            this.TxtMobile.Location = new System.Drawing.Point(96, 109);
             this.TxtMobile.Mask = "000-9000-0000";
             this.TxtMobile.Name = "TxtMobile";
-            this.TxtMobile.Size = new System.Drawing.Size(93, 21);
-            this.TxtMobile.TabIndex = 9;
+            this.TxtMobile.Size = new System.Drawing.Size(94, 21);
+            this.TxtMobile.TabIndex = 10;
             // 
             // TxtRegisterNumber
             // 
-            this.TxtRegisterNumber.Location = new System.Drawing.Point(120, 200);
+            this.TxtRegisterNumber.Location = new System.Drawing.Point(96, 139);
             this.TxtRegisterNumber.Mask = "000000-0000000";
             this.TxtRegisterNumber.Name = "TxtRegisterNumber";
-            this.TxtRegisterNumber.Size = new System.Drawing.Size(93, 21);
-            this.TxtRegisterNumber.TabIndex = 10;
+            this.TxtRegisterNumber.Size = new System.Drawing.Size(102, 21);
+            this.TxtRegisterNumber.TabIndex = 11;
             // 
             // TxtEmail
             // 
-            this.TxtEmail.Location = new System.Drawing.Point(120, 244);
+            this.TxtEmail.Location = new System.Drawing.Point(96, 169);
             this.TxtEmail.Name = "TxtEmail";
-            this.TxtEmail.Size = new System.Drawing.Size(302, 21);
-            this.TxtEmail.TabIndex = 11;
+            this.TxtEmail.Size = new System.Drawing.Size(176, 21);
+            this.TxtEmail.TabIndex = 12;
             // 
             // BtnRegister
             // 
-            this.BtnRegister.Image = global::MaskedTextApp.Properties.Resources.register;
+            this.BtnRegister.Image = ((System.Drawing.Image)(resources.GetObject("BtnRegister.Image")));
             this.BtnRegister.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnRegister.Location = new System.Drawing.Point(120, 288);
+            this.BtnRegister.Location = new System.Drawing.Point(96, 208);
             this.BtnRegister.Name = "BtnRegister";
-            this.BtnRegister.Size = new System.Drawing.Size(81, 29);
-            this.BtnRegister.TabIndex = 12;
-            this.BtnRegister.Text = "등록";
+            this.BtnRegister.Size = new System.Drawing.Size(62, 30);
+            this.BtnRegister.TabIndex = 13;
+            this.BtnRegister.Text = "   등록";
             this.BtnRegister.UseVisualStyleBackColor = true;
             this.BtnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
             // 
@@ -162,7 +162,7 @@ namespace MaskedTextApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 336);
+            this.ClientSize = new System.Drawing.Size(538, 257);
             this.Controls.Add(this.BtnRegister);
             this.Controls.Add(this.TxtEmail);
             this.Controls.Add(this.TxtRegisterNumber);
@@ -176,7 +176,10 @@ namespace MaskedTextApp
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "사원정보 등록";
             this.ResumeLayout(false);
             this.PerformLayout();
