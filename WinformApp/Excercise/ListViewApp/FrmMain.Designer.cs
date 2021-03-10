@@ -148,6 +148,7 @@ namespace ListViewApp
             this.LsvProducts.TabIndex = 7;
             this.LsvProducts.UseCompatibleStateImageBehavior = false;
             this.LsvProducts.View = System.Windows.Forms.View.Details;
+            this.LsvProducts.SelectedIndexChanged += new System.EventHandler(this.LsvProducts_SelectedIndexChanged_1);
             // 
             // columnHeader1
             // 

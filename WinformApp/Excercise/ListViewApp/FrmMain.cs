@@ -68,7 +68,7 @@ namespace ListViewApp
             if (RdbLargeIcon.Checked) LsvProducts.View = View.LargeIcon;
         }
 
-        private void LsvProducts_SelectedIndexChanged(object sender, EventArgs e)
+        private void LsvProducts_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             TxtSelected.Text = string.Empty;
 

@@ -22,8 +22,8 @@ namespace DateCalcApp
             DateTime today = DateTime.Now;
             DateTime birthday = DtpDirthDay.Value;
 
-            TxtResult.Text = $"{today.Subtract(birthday).TotalDays : #,###}";
-            TxtYear.Text = (today.Subtract(birthday).TotalDays / 365).ToString("0");
+            TxtResult.Text = $"{today.Subtract(birthday).TotalDays : #,###}"; // 오늘에서 자기 생일을 뺀것을 총 일수로 표현
+            TxtYear.Text = (today.Subtract(birthday).TotalDays / 365).ToString("0"); // 365로 나눠서 만으로 표시
         }
     }
 }
