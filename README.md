@@ -2,6 +2,4 @@
 C# 데스크톱 앱 개발 학습 리포지토리
 
 ## Winform Basic
-### Login App Template
-
-![Login App](https://github.com/jacksimuse/StudyDesktopApp/blob/main/WinformApp/PracticeWinApp/images/Login%20App%20Template.png)
+[Winform 기본](https://github.com/jacksimuse/StudyDesktopApp/tree/main/WinformApp/PracticeWinApp)
