@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BlinkerAPp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="250" Width="450">
+        Title="MainWindow" Height="250" Width="450" Loaded="Window_Loaded_1">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0*"/>

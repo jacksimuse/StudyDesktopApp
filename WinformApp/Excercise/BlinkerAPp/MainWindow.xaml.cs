@@ -37,13 +37,6 @@ namespace BlinkerAPp
             timer.Stop();
         }
 
-        private void WIndow_Loaded(object sender, RoutedEventArgs e)
-        {
-            timer = new DispatcherTimer();
-            timer.Interval = new TimeSpan(100000); // 0.1초
-            timer.Tick += Timer_Tick;
-        }
-
         private void Timer_Tick(object sender, EventArgs e)
         {
             if (BtnStartBlink.Background == Brushes.Red)
@@ -56,6 +49,13 @@ namespace BlinkerAPp
                 BtnStopBlink.ClearValue(Button.BackgroundProperty);
                 BtnStartBlink.Background = Brushes.Red;
             }
+        }
+
+        private void Window_Loaded_1(object sender, RoutedEventArgs e)
+        {
+            timer = new DispatcherTimer();
+            timer.Interval = new TimeSpan(1000000); // 0.1초
+            timer.Tick += Timer_Tick;
         }
     }
 }
