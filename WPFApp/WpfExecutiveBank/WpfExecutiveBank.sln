@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCalculatorApp", "WpfCalc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalogClockApp", "AnalogClockApp\AnalogClockApp.csproj", "{9447E8A9-9AD1-4205-8950-6068B7E3BCB6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonteCarloPiApp", "MonteCarloPiApp\MonteCarloPiApp.csproj", "{FE4833EE-5414-41AE-BAC2-BADBFC113675}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeBiteGame", "SnakeBiteGame\SnakeBiteGame.csproj", "{00B99D89-FA01-4BCE-9D2E-31E1F1171BEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{9447E8A9-9AD1-4205-8950-6068B7E3BCB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9447E8A9-9AD1-4205-8950-6068B7E3BCB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9447E8A9-9AD1-4205-8950-6068B7E3BCB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE4833EE-5414-41AE-BAC2-BADBFC113675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE4833EE-5414-41AE-BAC2-BADBFC113675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE4833EE-5414-41AE-BAC2-BADBFC113675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE4833EE-5414-41AE-BAC2-BADBFC113675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00B99D89-FA01-4BCE-9D2E-31E1F1171BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00B99D89-FA01-4BCE-9D2E-31E1F1171BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00B99D89-FA01-4BCE-9D2E-31E1F1171BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00B99D89-FA01-4BCE-9D2E-31E1F1171BEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
