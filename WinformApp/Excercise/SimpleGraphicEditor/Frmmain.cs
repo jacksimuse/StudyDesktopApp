@@ -41,16 +41,7 @@ namespace SimpleGraphicEditor
             this.eraser = new Pen(Color.White, 2);
         }
 
-        private void TlmLine_Click(object sender, EventArgs e)
-        {
-            this.mode = DrawMode.LINE;
-        }
-
-        private void TlmRectangle_Click(object sender, EventArgs e)
-        {
-            
-            this.mode = DrawMode.RECTANGLE;
-        }
+        
 
         private void Frmmain_MouseUp(object sender, MouseEventArgs e)
         {
@@ -117,6 +108,16 @@ namespace SimpleGraphicEditor
                 default:
                     break;
             }
+        }
+        private void TlmLine_Click(object sender, EventArgs e)
+        {
+            this.mode = DrawMode.LINE;
+        }
+
+        private void TlmRectangle_Click(object sender, EventArgs e)
+        {
+
+            this.mode = DrawMode.RECTANGLE;
         }
 
         private void TlmCircle_Click(object sender, EventArgs e)

@@ -30,13 +30,13 @@ namespace SimpleGraphicEditor
         private void InitializeComponent()
         {
             this.TlbMain = new System.Windows.Forms.ToolStrip();
-            this.StsMain = new System.Windows.Forms.StatusStrip();
             this.TlmLine = new System.Windows.Forms.ToolStripLabel();
             this.TlmRectangle = new System.Windows.Forms.ToolStripLabel();
             this.TlmCircle = new System.Windows.Forms.ToolStripLabel();
             this.TlmCurvedLine = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.TlmColor = new System.Windows.Forms.ToolStripLabel();
+            this.StsMain = new System.Windows.Forms.StatusStrip();
             this.StsCurrent = new System.Windows.Forms.ToolStripStatusLabel();
             this.TlbMain.SuspendLayout();
             this.StsMain.SuspendLayout();
@@ -56,17 +56,6 @@ namespace SimpleGraphicEditor
             this.TlbMain.Size = new System.Drawing.Size(655, 25);
             this.TlbMain.TabIndex = 0;
             this.TlbMain.Text = "toolStrip1";
-            // 
-            // StsMain
-            // 
-            this.StsMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.StsCurrent});
-            this.StsMain.Location = new System.Drawing.Point(0, 420);
-            this.StsMain.Name = "StsMain";
-            this.StsMain.Size = new System.Drawing.Size(655, 22);
-            this.StsMain.SizingGrip = false;
-            this.StsMain.TabIndex = 1;
-            this.StsMain.Text = "statusStrip1";
             // 
             // TlmLine
             // 
@@ -107,6 +96,17 @@ namespace SimpleGraphicEditor
             this.TlmColor.Size = new System.Drawing.Size(31, 22);
             this.TlmColor.Text = "색깔";
             this.TlmColor.Click += new System.EventHandler(this.TlmColor_Click);
+            // 
+            // StsMain
+            // 
+            this.StsMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.StsCurrent});
+            this.StsMain.Location = new System.Drawing.Point(0, 420);
+            this.StsMain.Name = "StsMain";
+            this.StsMain.Size = new System.Drawing.Size(655, 22);
+            this.StsMain.SizingGrip = false;
+            this.StsMain.TabIndex = 1;
+            this.StsMain.Text = "statusStrip1";
             // 
             // StsCurrent
             // 

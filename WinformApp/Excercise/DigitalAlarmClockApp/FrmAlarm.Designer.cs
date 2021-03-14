@@ -38,7 +38,7 @@ namespace DigitalAlarmClockApp
             this.DtpAlarmdate = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.TapDigitalClock = new System.Windows.Forms.TabPage();
+            this.TabDigitalClock = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.LblDate = new System.Windows.Forms.Label();
             this.LblTime = new System.Windows.Forms.Label();
@@ -47,14 +47,14 @@ namespace DigitalAlarmClockApp
             this.MyTimer = new System.Windows.Forms.Timer(this.components);
             this.TabClock.SuspendLayout();
             this.TapSetAlarm.SuspendLayout();
-            this.TapDigitalClock.SuspendLayout();
+            this.TabDigitalClock.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabClock
             // 
             this.TabClock.Controls.Add(this.TapSetAlarm);
-            this.TabClock.Controls.Add(this.TapDigitalClock);
+            this.TabClock.Controls.Add(this.TabDigitalClock);
             this.TabClock.Location = new System.Drawing.Point(12, 12);
             this.TabClock.Name = "TabClock";
             this.TabClock.SelectedIndex = 0;
@@ -132,18 +132,18 @@ namespace DigitalAlarmClockApp
             this.label1.TabIndex = 0;
             this.label1.Text = "날짜 설정";
             // 
-            // TapDigitalClock
+            // TabDigitalClock
             // 
-            this.TapDigitalClock.Controls.Add(this.groupBox1);
-            this.TapDigitalClock.Controls.Add(this.LblAlarm);
-            this.TapDigitalClock.Controls.Add(this.label3);
-            this.TapDigitalClock.Location = new System.Drawing.Point(4, 22);
-            this.TapDigitalClock.Name = "TapDigitalClock";
-            this.TapDigitalClock.Padding = new System.Windows.Forms.Padding(3);
-            this.TapDigitalClock.Size = new System.Drawing.Size(375, 250);
-            this.TapDigitalClock.TabIndex = 1;
-            this.TapDigitalClock.Text = "디지털시계";
-            this.TapDigitalClock.UseVisualStyleBackColor = true;
+            this.TabDigitalClock.Controls.Add(this.groupBox1);
+            this.TabDigitalClock.Controls.Add(this.LblAlarm);
+            this.TabDigitalClock.Controls.Add(this.label3);
+            this.TabDigitalClock.Location = new System.Drawing.Point(4, 22);
+            this.TabDigitalClock.Name = "TabDigitalClock";
+            this.TabDigitalClock.Padding = new System.Windows.Forms.Padding(3);
+            this.TabDigitalClock.Size = new System.Drawing.Size(375, 250);
+            this.TabDigitalClock.TabIndex = 1;
+            this.TabDigitalClock.Text = "디지털시계";
+            this.TabDigitalClock.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -206,8 +206,8 @@ namespace DigitalAlarmClockApp
             this.TabClock.ResumeLayout(false);
             this.TapSetAlarm.ResumeLayout(false);
             this.TapSetAlarm.PerformLayout();
-            this.TapDigitalClock.ResumeLayout(false);
-            this.TapDigitalClock.PerformLayout();
+            this.TabDigitalClock.ResumeLayout(false);
+            this.TabDigitalClock.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -218,7 +218,7 @@ namespace DigitalAlarmClockApp
 
         private System.Windows.Forms.TabControl TabClock;
         private System.Windows.Forms.TabPage TapSetAlarm;
-        private System.Windows.Forms.TabPage TapDigitalClock;
+        private System.Windows.Forms.TabPage TabDigitalClock;
         private System.Windows.Forms.Button BtnRelease;
         private System.Windows.Forms.Button BtnSet;
         private System.Windows.Forms.DateTimePicker DtpAlarmTime;

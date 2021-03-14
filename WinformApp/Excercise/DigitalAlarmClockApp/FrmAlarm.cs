@@ -42,7 +42,7 @@ namespace DigitalAlarmClockApp
             MyTimer.Enabled = true;
             MyTimer.Start();
 
-            TabClock.SelectedTab = TapDigitalClock;
+            TabClock.SelectedTab = TabDigitalClock;
         }
 
         private void MyTimer_Tick(object sender, EventArgs e)
@@ -76,7 +76,7 @@ namespace DigitalAlarmClockApp
             LblAlarm.Text = $"Alarm : {SetDay.ToShortDateString()} {SetTime.ToString("hh:mm:ss")}";
             LblAlarm.ForeColor = Color.Red;
 
-            TabClock.SelectedTab = TapDigitalClock;
+            TabClock.SelectedTab = TabDigitalClock;
             IsSetAlarm = true;
         }
 
@@ -85,7 +85,7 @@ namespace DigitalAlarmClockApp
             IsSetAlarm = false;
             LblAlarm.Text = "Alarm : ";
             LblAlarm.ForeColor = Color.Gray;
-            TabClock.SelectedTab = TapDigitalClock;
+            TabClock.SelectedTab = TabDigitalClock;
         }
     }
 }
