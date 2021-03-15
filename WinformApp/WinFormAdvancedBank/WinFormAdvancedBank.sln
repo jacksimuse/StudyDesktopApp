@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinChartApp", "WinChartApp\WinChartApp.csproj", "{8A31DEBA-6D06-410C-B88C-F578736AB38C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageViewerApp", "ImageViewerApp\ImageViewerApp.csproj", "{B2F3C8F8-F41D-47C4-8060-5EE9F5D557D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A31DEBA-6D06-410C-B88C-F578736AB38C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A31DEBA-6D06-410C-B88C-F578736AB38C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A31DEBA-6D06-410C-B88C-F578736AB38C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A31DEBA-6D06-410C-B88C-F578736AB38C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2F3C8F8-F41D-47C4-8060-5EE9F5D557D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2F3C8F8-F41D-47C4-8060-5EE9F5D557D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2F3C8F8-F41D-47C4-8060-5EE9F5D557D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2F3C8F8-F41D-47C4-8060-5EE9F5D557D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27417ABF-F112-44BB-B542-92C5B80C8DF4}
+	EndGlobalSection
+EndGlobal
