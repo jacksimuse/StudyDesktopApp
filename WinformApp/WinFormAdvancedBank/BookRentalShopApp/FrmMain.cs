@@ -65,6 +65,11 @@ namespace BookRentalShopApp
             InitChildForm(frm, "책 관리");
         }
 
+        private void MnuRental_Click(object sender, EventArgs e)
+        {
+            FrmRental frm = new FrmRental();
+            InitChildForm(frm, "대여 관리");
+        }
         private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MetroMessageBox.Show(this, "종료하시겠습니까?", "종료",

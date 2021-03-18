@@ -58,6 +58,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmBooksPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBooksPopup.Designer.cs">
+      <DependentUpon>FrmBooksPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMemberPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMemberPopup.Designer.cs">
+      <DependentUpon>FrmMemberPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRental.Designer.cs">
+      <DependentUpon>FrmRental.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmBooks.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +110,15 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQlConnection.cs" />
+    <EmbeddedResource Include="FrmBooksPopup.resx">
+      <DependentUpon>FrmBooksPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMemberPopup.resx">
+      <DependentUpon>FrmMemberPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRental.resx">
+      <DependentUpon>FrmRental.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBooks.resx">
       <DependentUpon>FrmBooks.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +142,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -132,6 +160,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="book.ico" />
+    <None Include="KakaoTalk_20210318_145727771.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
