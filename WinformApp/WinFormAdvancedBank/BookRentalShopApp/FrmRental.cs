@@ -226,45 +226,38 @@ namespace BookRentalShopApp
                     else // UPDATE
                     {
                         query = @"UPDATE [dbo].[rentaltbl]
-                                     SET [returnDate] = GETDATE()
-                                       , [rentalState] = 'T'
+                                     SET [returnDate] = CASE @rentalState
+						                                 WHEN 'T' THEN GETDATE()
+						                                 WHEN 'R' THEN NULL
+					                                    END
+	                                   , [rentalState] = @rentalState
                                    WHERE Idx = @Idx ";
                     }
                     cmd.CommandText = query;
 
-                    var pmemberIdx = new SqlParameter("@memberIdx", SqlDbType.Int);
-                    pmemberIdx.Value = selMemberIdx;
-                    cmd.Parameters.Add(pmemberIdx);
-
-                    var pbookIdx = new SqlParameter("@bookIdx", SqlDbType.Int);
-                    pbookIdx.Value = selBookIdx;
-                    cmd.Parameters.Add(pbookIdx);
-
-                    var prentalDate = new SqlParameter("@rentalDate", SqlDbType.Date);
-                    prentalDate.Value = DtpRentalDate.Value;
-                    cmd.Parameters.Add(prentalDate);
-
-                    var prentalState = new SqlParameter("@rentalState", SqlDbType.Char, 1);
-                    prentalState.Value = CboRentalState.SelectedValue;
-                    cmd.Parameters.Add(prentalState);
-
-                    if (IsNew == false) // Update 일때만 처리
+                    if (IsNew == false) // 신규
                     {
+                        var pmemberIdx = new SqlParameter("@memberIdx", SqlDbType.Int);
+                        pmemberIdx.Value = selMemberIdx;
+                        cmd.Parameters.Add(pmemberIdx);
+
+                        var pbookIdx = new SqlParameter("@bookIdx", SqlDbType.Int);
+                        pbookIdx.Value = selBookIdx;
+                        cmd.Parameters.Add(pbookIdx);
+
+                        var prentalDate = new SqlParameter("@rentalDate", SqlDbType.Date);
+                        prentalDate.Value = DtpRentalDate.Value;
+                        cmd.Parameters.Add(prentalDate);
+                    } 
+                    else // 업데이트일때
+                    {
+                        var prentalState = new SqlParameter("@rentalState", SqlDbType.Char, 1);
+                        prentalState.Value = CboRentalState.SelectedValue;
+                        cmd.Parameters.Add(prentalState);
+
                         var pIdx = new SqlParameter("@Idx", SqlDbType.Int);
                         pIdx.Value = TxtIdx.Text;
                         cmd.Parameters.Add(pIdx);
-                    }
-
-                    var reuslt = cmd.ExecuteNonQuery();
-                    if (reuslt == 1)
-                    {
-                        MetroMessageBox.Show(this, "저장 성공", "저장",
-                            MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    else
-                    {
-                        MetroMessageBox.Show(this, "저장 실패", "저장",
-                            MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
