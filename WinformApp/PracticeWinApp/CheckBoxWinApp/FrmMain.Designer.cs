@@ -132,6 +132,7 @@ namespace CheckBoxWinApp
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label1);
             this.Name = "FrmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Favorite Fruits App";
             this.ResumeLayout(false);
             this.PerformLayout();
