@@ -4,7 +4,7 @@
 
 
 ## ColorChangeWinApp
-
+[ColorChangeWinApp](https://github.com/jacksimuse/StudyDesktopApp/blob/main/WinformApp/PracticeWinApp/images/ColorChangeApp.gif)
 
 ## FlagWinApp
 ![FlagWinApp](https://user-images.githubusercontent.com/73567433/111893474-45e65980-8a46-11eb-96e5-43836287cc90.gif)
@@ -18,7 +18,7 @@
 
 
 ## MaskedTextApp
-
+[MaskedTextApp](https://github.com/jacksimuse/StudyDesktopApp/blob/main/WinformApp/PracticeWinApp/images/MaskedTextApp.gif)
 
 ## RadioWinApp
 ![RadioWinApp](https://user-images.githubusercontent.com/73567433/111893485-57c7fc80-8a46-11eb-931f-e9e98734aa1a.gif)
