@@ -42,8 +42,6 @@ namespace BookRentalShopApp
             // Validation 체크
             if (CheckValidation() == false) return;
 
-
-
             SaveData();
             RefreshData();
             ClearInputs();

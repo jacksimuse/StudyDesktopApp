@@ -110,6 +110,10 @@ namespace WinCalculatorApp
             MemFlag = true;
         }
 
-       
+        private void BtnC_Click(object sender, EventArgs e)
+        {
+            TxtExp.Clear();
+            TxtResult.Clear();
+        }
     }
 }

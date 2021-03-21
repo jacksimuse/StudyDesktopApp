@@ -83,7 +83,5 @@ namespace BookRentalShopApp
                 e.Cancel = true; // 프로그램 종료 안함
             }
         }
-
-        
     }
 }

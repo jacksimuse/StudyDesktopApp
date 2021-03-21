@@ -209,6 +209,7 @@ namespace WinCalculatorApp
             this.BtnC.TabIndex = 3;
             this.BtnC.Text = "C";
             this.BtnC.UseVisualStyleBackColor = false;
+            this.BtnC.Click += new System.EventHandler(this.BtnC_Click);
             // 
             // BtnDelete
             // 

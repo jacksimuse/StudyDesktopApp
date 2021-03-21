@@ -28,7 +28,6 @@ namespace BookRentalShopApp
         private void BtnLogin_Click(object sender, EventArgs e)
         {
             var strUserId = "";
-            // MessageBox.Show("로그인 처리!");
             if (string.IsNullOrEmpty(TxtId.Text) || string.IsNullOrEmpty(TxtPassword.Text))
             {
                 MetroMessageBox.Show(this, "아이디/패스워드를 입력하세요!", "오류", MessageBoxButtons.OK,
