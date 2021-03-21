@@ -20,8 +20,8 @@ C# 데스크톱 앱 개발 학습 리포지토리
 4. ### WinFormAdvancedBank
    [WinFormAdvancedBank](https://github.com/jacksimuse/StudyDesktopApp/tree/main/WinformApp/WinFormAdvancedBank)
    
-   - Winform과 DB연동을 통한 실생활에 유용하게 쓰일 수 있는 프로그렘 제작
-   - 
+   - Winform과 DB연동을 통한 실생활에 유용하게 쓰일 수 있는 프로그램 제작
+   
 --------------------------------------------------------------------------
 
 ## WPF
