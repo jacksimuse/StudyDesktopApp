@@ -14,7 +14,7 @@
     Height="450"
     WindowStartupLocation="CenterScreen"
     ResizeMode="CanResizeWithGrip"
-    GlowBrush="{DynamicResource MahApps.Brushes.Accent}" Initialized="MetroWindow_Initialized">
+    GlowBrush="{DynamicResource MahApps.Brushes.Accent}" Initialized="MetroWindow_Initialized" Background="White">
 
     <mah:MetroWindow.LeftWindowCommands>
         <mah:WindowCommands>
@@ -108,7 +108,7 @@
                                  VerticalAlignment="Center" />
                         <DatePicker Grid.Row="3"
                                     materialDesign:HintAssist.Hint="출판일"
-                                    Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />      
+                                    Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
                         <TextBox Grid.Row="4"
                             materialDesign:HintAssist.Hint="ISBN" 
                                  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
