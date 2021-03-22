@@ -27,4 +27,8 @@ C# 데스크톱 앱 개발 학습 리포지토리
 ## WPF
 1. ### WPF Basic ~ Execute
    [WPF](https://github.com/jacksimuse/StudyDesktopApp/tree/main/WPFApp/WpfExecutiveBank)
-   - WPF을 이용한 기본적인 프로그램부터 응용단계까지 제작하는 학습
+   - WPF를 이용한 기본적인 프로그램부터 응용단계까지 제작하는 학습
+
+2. ### WPFAdvBank
+   [WPF 실행프로그램](https://github.com/jacksimuse/StudyDesktopApp/tree/main/WPFApp/WpfBank)
+   - WPF를 이용하여 UI프로그램 제작
