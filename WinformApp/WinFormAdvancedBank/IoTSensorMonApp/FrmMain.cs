@@ -69,13 +69,13 @@ namespace IoTSensorMonApp
         {
             ChtPhotoResistors.ChartAreas[0].BackColor = Color.Blue;
             ChtPhotoResistors.ChartAreas[0].AxisX.Minimum = 0;
-            ChtPhotoResistors.ChartAreas[0].AxisX.Maximum = 200;
+            ChtPhotoResistors.ChartAreas[0].AxisX.Maximum = xCount;
             ChtPhotoResistors.ChartAreas[0].AxisX.Interval = xCount / 4;
             ChtPhotoResistors.ChartAreas[0].AxisX.MajorGrid.LineColor = Color.WhiteSmoke;
             ChtPhotoResistors.ChartAreas[0].AxisX.MajorGrid.LineDashStyle = ChartDashStyle.Dash;
 
             ChtPhotoResistors.ChartAreas[0].AxisY.Minimum = 0;
-            ChtPhotoResistors.ChartAreas[0].AxisY.Maximum = 1023;
+            ChtPhotoResistors.ChartAreas[0].AxisY.Maximum = 1024;
             ChtPhotoResistors.ChartAreas[0].AxisY.Interval = xCount;
             ChtPhotoResistors.ChartAreas[0].AxisY.MajorGrid.LineColor = Color.WhiteSmoke;
             ChtPhotoResistors.ChartAreas[0].AxisY.MajorGrid.LineDashStyle = ChartDashStyle.Dash;
@@ -154,7 +154,7 @@ namespace IoTSensorMonApp
             InsertTable(data);
 
             // 센서값 갯수
-            TxtSensorNum.Text = sensors.Count.ToString(); // $"{sensors.Count}" 같은 값 다른 표현
+            TxtSensorNum.Text = $"{sensors.Count}"; 
             // 프로그래스바 현재값 출력
             PrbPhotoResistor.Value = v;
             // 리스트박스에 데이터 출력
@@ -198,11 +198,10 @@ namespace IoTSensorMonApp
                     var query = $"insert into Tbl_PhotoResistor " +
                                 $"(CurrentDt, Value, SimulFlag)" +
                                 $" values" +
-                                $" ('{data.Current.ToString("yyyy-MM-dd HH:mm:ss")}','{data.Value}', '{(data.SimulFlag == true ? "1" : "0")}');";
+                                $" ('{data.Current:yyyy-MM-dd HH:mm:ss}','{data.Value}', '{(data.SimulFlag == true ? "1" : "0")}');";
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.ExecuteNonQuery();
                 }
-
             }
             catch (Exception ex)
             {
@@ -236,7 +235,6 @@ namespace IoTSensorMonApp
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
             Environment.Exit(0);
         }
 
@@ -256,7 +254,6 @@ namespace IoTSensorMonApp
 
             ChtPhotoResistors.ChartAreas[0].AxisX.ScaleView.Zoom(sensors.Count - xCount, sensors.Count);
             ChtPhotoResistors.ChartAreas[0].AxisX.Interval = xCount / 4;
-
         }
     }
 }
