@@ -45,6 +45,8 @@ namespace IoTSensorMonApp
             this.LblConnectTime = new System.Windows.Forms.Label();
             this.TxtSensorNum = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.PrbPhotoResistor = new System.Windows.Forms.ProgressBar();
             this.LsbPhotoResistors = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -55,8 +57,6 @@ namespace IoTSensorMonApp
             this.ChtPhotoResistors = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.BtnViewAll = new System.Windows.Forms.Button();
             this.BtnZoom = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -88,24 +88,24 @@ namespace IoTSensorMonApp
             // MnuLoadFile
             // 
             this.MnuLoadFile.Name = "MnuLoadFile";
-            this.MnuLoadFile.Size = new System.Drawing.Size(180, 22);
+            this.MnuLoadFile.Size = new System.Drawing.Size(139, 22);
             this.MnuLoadFile.Text = "읽어오기(&O)";
             // 
             // MnuSaveFile
             // 
             this.MnuSaveFile.Name = "MnuSaveFile";
-            this.MnuSaveFile.Size = new System.Drawing.Size(180, 22);
+            this.MnuSaveFile.Size = new System.Drawing.Size(139, 22);
             this.MnuSaveFile.Text = "저장하기(&S)";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(136, 6);
             // 
             // MnuExit
             // 
             this.MnuExit.Name = "MnuExit";
-            this.MnuExit.Size = new System.Drawing.Size(180, 22);
+            this.MnuExit.Size = new System.Drawing.Size(139, 22);
             this.MnuExit.Text = "종료(&X)";
             this.MnuExit.Click += new System.EventHandler(this.MnuExit_Click);
             // 
@@ -121,14 +121,14 @@ namespace IoTSensorMonApp
             // MnuBeginSimulation
             // 
             this.MnuBeginSimulation.Name = "MnuBeginSimulation";
-            this.MnuBeginSimulation.Size = new System.Drawing.Size(180, 22);
+            this.MnuBeginSimulation.Size = new System.Drawing.Size(113, 22);
             this.MnuBeginSimulation.Text = "시작(&B)";
             this.MnuBeginSimulation.Click += new System.EventHandler(this.MnuBeginSimulation_Click);
             // 
             // MnuEndSimulation
             // 
             this.MnuEndSimulation.Name = "MnuEndSimulation";
-            this.MnuEndSimulation.Size = new System.Drawing.Size(180, 22);
+            this.MnuEndSimulation.Size = new System.Drawing.Size(113, 22);
             this.MnuEndSimulation.Text = "끝(&E)";
             this.MnuEndSimulation.Click += new System.EventHandler(this.MnuEndSimulation_Click);
             // 
@@ -161,6 +161,24 @@ namespace IoTSensorMonApp
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "PhotoResistor";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(310, 56);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 15);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "1023";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 56);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(14, 15);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "0";
             // 
             // PrbPhotoResistor
             // 
@@ -272,24 +290,6 @@ namespace IoTSensorMonApp
             this.BtnZoom.Text = "Zoom";
             this.BtnZoom.UseVisualStyleBackColor = true;
             this.BtnZoom.Click += new System.EventHandler(this.BtnZoom_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 56);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(14, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "0";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(310, 56);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "1023";
             // 
             // FrmMain
             // 
