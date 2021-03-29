@@ -26,6 +26,7 @@ namespace WpfPracticeApp.Businesslogic
             }
         }
 
+        private Color mainColor;
         public Color MainColor
         {
             get { return MainColor; }

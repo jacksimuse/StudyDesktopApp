@@ -29,6 +29,8 @@ namespace WpfPracticeApp
         private void Page_Initialized(object sender, EventArgs e)
         {
             Car car = new Car();
+            car.Speed = 10;
+            car.MainColor = Colors.Red;
         }
     }
 }

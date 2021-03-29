@@ -1,9 +1,9 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <Button x:Key="button" Content="Hello"></Button>
-    <SolidColorBrush x:Key="accentBrush" Color="Red"/>
+    <Button x:Key="button" Content="Hello!!!" />
+    <SolidColorBrush x:Key="accentBrush" Color="Red" />
     <LinearGradientBrush x:Key="background">
-        <GradientStop Color="#ffdbffe7" Offset="0" />
+        <GradientStop Color="#ffdbffe7" Offset="0"/>
         <GradientStop Color="#ff03882d" Offset="1" />
     </LinearGradientBrush>
 </ResourceDictionary>
