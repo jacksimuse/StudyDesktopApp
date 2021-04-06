@@ -14,7 +14,8 @@
     Height="450"
     WindowStartupLocation="CenterScreen"
     ResizeMode="CanResizeWithGrip"
-    GlowBrush="{DynamicResource MahApps.Brushes.Accent}" Initialized="MetroWindow_Initialized" Background="White">
+    GlowBrush="{DynamicResource MahApps.Brushes.Accent}" 
+    Initialized="MetroWindow_Initialized" Background="White">
 
     <mah:MetroWindow.LeftWindowCommands>
         <mah:WindowCommands>
