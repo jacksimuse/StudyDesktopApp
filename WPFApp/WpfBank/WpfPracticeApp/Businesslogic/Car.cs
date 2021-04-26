@@ -29,10 +29,10 @@ namespace WpfPracticeApp.Businesslogic
         private Color mainColor;
         public Color MainColor
         {
-            get { return MainColor; }
+            get { return mainColor; }
             set
             {
-                MainColor = value;
+                mainColor = value;
                 OnPropertyChanged("MainColor");
             }
         }
